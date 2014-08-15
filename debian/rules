@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_configure:
+	./configure \
+		--sysconfdir=/etc \
+		--prefix=/usr \
+		--localstatedir=/var \
+		--enable-tools \
+		--enable-dundee \
+		--with-systemdunitdir=/lib/systemd/system
+
+override_dh_auto_test:

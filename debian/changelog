@@ -1,0 +1,5 @@
+ofono (1.15-0.1) UNRELEASED; urgency=medium
+
+  * Initial packaging.
+
+ -- Patrik Flykt <patrik.flykt@linux.intel.com>  Tue, 29 Jul 2014 22:28:28 +0300

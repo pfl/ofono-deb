@@ -1,0 +1,34 @@
+Source: ofono
+Maintainer: Patrik Flykt <patrik.flykt@linux.intel.com>
+Section: net
+Priority: optional
+Build-Depends: debhelper(>=8), libglib2.0-dev(>=2.28),libdbus-1-dev(>=1.4), libudev-dev (>=175-7.2)
+
+Package: ofono-upstream
+Architecture: any
+Conflicts: ofono
+Replaces: ofono
+Provides: ofono
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: connman, bluez, dundee-upstream
+Description: oFono daemon
+ This unofficial package contains the cellular modem daemon oFono
+
+Package: ofono-upstream-dev
+Architecture: any
+Conflicts: ofono-dev
+Replaces: ofono-dev
+Provides: ofono-dev
+Depends: ${misc:Depends}, libglib2.0-dev(>=2.28), libdbus-1-dev(>=1.4)
+Description: oFono development files
+ This unofficial package contains header files and pkgconfig support for
+ developing oFono plugins.
+
+Package: dundee-upstream
+Architecture: any
+Conflicts: ofono(>=0.0)
+Replaces: ofono(>=0.0)
+Depends: ${shlibs:Depends}, ${misc:Depends}, bluez, connman(>= 1.12)
+Description: dundee Bluetooth Dial-Up (DUN) support daemon
+ This unofficial package provides Bluetooth Dial-Up (DUN) support via the
+ dundee daemon.
