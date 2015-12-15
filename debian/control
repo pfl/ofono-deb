@@ -23,6 +23,15 @@ Description: oFono development files
  This unofficial package contains header files and pkgconfig support for
  developing oFono plugins.
 
+Package: ofono-upstream-test
+Architecture: any
+Conflicts: ofono
+Replaces: ofono
+Depends: ${misc:Depends}, python
+Recommends: ofono-upstream|ofono
+Description: oFono test tools
+ This unofficial package contains oFono test tools
+
 Package: dundee-upstream
 Architecture: any
 Conflicts: ofono
