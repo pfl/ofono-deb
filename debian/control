@@ -8,10 +8,9 @@ Package: ofono-upstream
 Architecture: any
 Conflicts: ofono
 Replaces: ofono
-Provides: ofono
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: connman-upstream|connman, bluez, dundee-upstream
-Description: oFono daemon
+Description: oFono GSM/3G cellular daemon
  This unofficial package contains the cellular modem daemon oFono
 
 Package: ofono-upstream-dev
@@ -26,8 +25,8 @@ Description: oFono development files
 
 Package: dundee-upstream
 Architecture: any
-Conflicts: ofono(>=0.0)
-Replaces: ofono(>=0.0)
+Conflicts: ofono
+Replaces: ofono
 Depends: ${shlibs:Depends}, ${misc:Depends}, bluez
 Recommends: connman-upstream(>= 1.12)|connman(>= 1.12)
 Description: dundee Bluetooth Dial-Up (DUN) support daemon
