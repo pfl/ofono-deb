@@ -1,5 +1,4 @@
 etc/dbus-1/system.d/ofono.conf
 etc/ofono/
-lib/systemd/system/ofono.service
 usr/sbin/ofonod
 usr/share/man/man8/ofonod.8

@@ -1,3 +1,2 @@
 etc/dbus-1/system.d/dundee.conf
-lib/systemd/system/dundee.service
 usr/sbin/dundee

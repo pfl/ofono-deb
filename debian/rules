@@ -11,4 +11,11 @@ override_dh_auto_configure:
 		--enable-dundee \
 		--with-systemdunitdir=/lib/systemd/system
 
+override_dh_installinit:
+	cp src/ofono.service debian/ofono-upstream.service
+	cp dundee/dundee.service debian/dundee-upstream.service
+	dh_systemd_enable --no-enable
+	dh_installinit
+	dh_systemd_start --restart-after-upgrade
+
 override_dh_auto_test:
